@@ -1,0 +1,35 @@
+/* static/css/style.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: rgb(26, 25, 25);
+}
+
+h1 {
+  color: white;
+}
+
+#puzzle-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 24px;
+  background-color: lightgray;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile.empty {
+  background-color: rgb(26, 25, 25);
+  cursor: default;
+}
