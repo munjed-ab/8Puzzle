@@ -44,7 +44,7 @@ def a_star(start, goal):
             return reconstruct_path(came_from, current)
 
         for neighbor in get_neighbors(current):
-            tentative_g_score = g_score[current] + 1  # Assume cost between neighbors is 1
+            tentative_g_score = g_score[current] + 1  # cost between neighbors is 1
 
             if tentative_g_score < g_score.get(neighbor, float('inf')):
                 came_from[neighbor] = current
